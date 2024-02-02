@@ -130,7 +130,7 @@ export default function Header({ headerContactData }: HeaderProps) {
                     </div>
             </div>
         </div>
-            <div ref={ref} className="min-[1174px]:hidden ">
+            <div ref={ref} className="min-[1174px]:hidden  ">
       <Hamburger toggled={isOpen} size={30} color="white" toggle={setOpen} />  
       <AnimatePresence>
         {isOpen && (
@@ -139,7 +139,7 @@ export default function Header({ headerContactData }: HeaderProps) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed left-0 shadow-4xl right-0  z-50 top-[8rem] p-5 pt-0 bg-neutral-950 border-b border-b-primary/20"
+            className="fixed w-full shadow-4xl box-border left-0  overflow-hidden  z-50 top-[8rem] p-5 pt-0 bg-neutral-950 border-b border-b-primary/20"
           >
             <ul className="grid gap-2 w-full">
               {links.map((link, idx) => {
@@ -171,8 +171,8 @@ export default function Header({ headerContactData }: HeaderProps) {
                             {serviceLinks.map((item, idx: number) => (
                               <Link 
                                 key={idx}
-                                href={`/blogs/${item.href}`}
-                                onClick={() =>  {
+                                href={`/services/${item.linkName}`}                                
+                                  onClick={() =>  {
                                   setOpen((prev) => !prev);
                                   setServiceOpen((prev) => !prev)
                                 }}
@@ -224,7 +224,7 @@ export default function Header({ headerContactData }: HeaderProps) {
                                   <div onMouseLeave={() => setIsHovered(false)} onMouseOver={() => setIsHovered(true)}   className={` absolute top-[80px] left-12 rounded-lg z-30  ${ isHovered ? 'opacity-100 block scale-100' : 'opacity-0 hidden scale-0'} bg-white grid grid-cols-2 justify-start gap-4 dropdown font-kumb p-6 py-8 min-w-[300px] transition-all duration-100 h-max `}>
                                     {
                                       serviceLinks.map((item, idx) => (
-                                         <Link  onMouseOver={() => setIsHovered(true)} onClick={() => setIsHovered(false)}  key={idx} href={item.href}  className={` whitespace-nowrap link_after text-left text-lg text-black  leading-[24px] hover:text-primary `}>{item.service}</Link>
+                                         <Link  onMouseOver={() => setIsHovered(true)} onClick={() => setIsHovered(false)}  key={idx} href={`/services/${item.linkName}`}  className={` whitespace-nowrap link_after text-left text-lg text-black  leading-[24px] hover:text-primary `}>{item.service}</Link>
                                       ))
                                     }
                                   </div>

@@ -134,6 +134,7 @@ export const serviceDetailQuery = (serviceId: string) => {
 
 
   export const homeServicesQuery = `*[_type == 'serviceDetail'] {
+    "pageSlug": slug.current,
     title,
     serviceBrief,
     firstPara,
@@ -151,10 +152,7 @@ export const serviceDetailQuery = (serviceId: string) => {
     instinctTitle,
     instinctPara,
     sharedData
-  
-    
   }`
-
 
 
   export const allServiceQuery = `*[_type == 'serviceDetail'] {
@@ -289,14 +287,11 @@ export const serviceDetailQuery = (serviceId: string) => {
        "slug": slug.current,
        title,
      },
-
      tag[] -> {
        tag,
        "tagSlug": slug.current,
      },
-
      publishedAt,
-    
   }`
 
   export const tagsQuery = `*[_type == 'tag'] {

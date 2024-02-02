@@ -53,7 +53,7 @@ export default async function Footer() {
             </div>
             <div className="flex flex-col items-start leading-[28px] text-white justify-center gap-4">
                 <p className=" my-4 ">{summary.secondSummary}</p>
-                <div className="flex items-start justify-center gap-4 w-full">
+                <div className="flex items-start flex-col justify-start md:justify-center gap-4 w-full">
                     <Link href='/contact-us' className="rounded-xl px-4 md:px-7 tracking-normal whitespace-nowrap bg-primary baba3 py-2 leading-[26px] uppercase md:tracking-wide">
                         Contact Us
                     </Link>
@@ -63,7 +63,7 @@ export default async function Footer() {
                 </div>
             </div>
         </div>
-        <div className="flex flex-col min-[748px]:flex-row w-[95%] text-white py-11 border-b items-start justify-center gap-8">
+        <div className="flex flex-col min-[748px]:flex-row w-[95%] text-white py-11 border-b border-white/80 items-start justify-center gap-8">
             <div className="flex flex-col min-[1322px]:flex-row text-white items-start justify-center gap-8">
                 <div className="flex flex-col justify-center items-start gap-4">
                     <p className=" text-white/80 text-[13px] leading-[24px] ">{summary.thirdSummary}</p>
@@ -133,16 +133,15 @@ export default async function Footer() {
                 <div className="flex flex-col justify-center w-full items-start gap-4">
                     <p className="text-xl leading-[30px]">Our newsletter</p>
                     <form className="flex flex-col w-full justify-center mb-7 items-start gap-4">
-                        <div className="flex flex-1 items-center h-[55px] w-full justify-center gap-3">
+                        <div className="flex items-center h-[55px] box-border w-full overflow-hidden justify-center gap-3">
                                 <input 
-                                    className=" border-2 h-full bg-black font-kumb text-white p-3 border-white rounded-xl w-full  py-4"
+                                    className=" border-2 h-full bg-black w-[80%] font-kumb text-white p-3 border-white rounded-xl   py-4"
                                     type="email"
                                     placeholder="Your email address"
-
                                 />
                                 <button
                                     type="submit"
-                                    className="bg-primary flex items-center justify-center h-full rounded-xl text-white p-4"
+                                    className="bg-primary flex items-center w-[20%] justify-center h-full rounded-xl text-white p-4"
                                 >
                                     <FiSend fontSize={25} />
                                 </button>
@@ -165,15 +164,15 @@ export default async function Footer() {
                         />
                         <div className="flex flex-col items-start justify-center gap-1">
                             <a href="tel:+233547307998" className="text-white text-lg cursor-pointer ">{contact2.contactBrief.phoneNumber}</a>
-                            <a href={`mailto:${contact2.contactBrief.email}`} className="text-white flex flex-wrap underline cursor-pointer ">{contact2.contactBrief.email}</a>
+                            <a href={`mailto:${contact2.contactBrief.email}`} className="text-white flex flex-wrap underline whitespace-pre-wrap cursor-pointer ">{contact2.contactBrief.email}</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div className="flex items-center mx-auto w-[95%] font-kumb justify-between pb-11">
-            <Link href='/privacy' className="text-[15px] font-kumb text-white/80 hover:text-primary transition-colors duration-100">Privacy</Link>
-            <p className=" text-white/80 text-[15px] ">Copyright &copy;{currentYear} Poweredge. All rights reserved.</p>
+        <div className="flex md:items-center flex-col md:flex-row justify-start  gap-5 items-start mx-auto w-[95%] font-kumb  md:justify-between pb-11">
+            <Link href='/privacy' className="text-[15px] font-kumb whitespace-nowrap text-white/80 hover:text-primary transition-colors duration-100">Help/Terms & Conditions/Privacy</Link>
+            <p className=" text-white/80 text-[15px] whitespace-nowrap ">Copyright &copy;{currentYear} Poweredge. All rights reserved.</p>
         </div> 
     </footer> 
   )

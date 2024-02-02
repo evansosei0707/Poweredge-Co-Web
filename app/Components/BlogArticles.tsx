@@ -17,12 +17,12 @@ export default async function BlogArticles() {
 
   return (
     <section className="w-full flex flex-col items-start my-8 justify-center px-7 gap-4">
-        <div className="flex flex-col min-[1011px]:flex-row min-[1011px]:justify-between  w-full gap-6 items-start pb-8 justify-start">
+        <div className="flex flex-col min-[1011px]:flex-row min-[1011px]:justify-between  w-full md:gap-6 gap-3 items-start pb-8 justify-start">
             <div className="flex flex-col gap-6 items-start pb-8 justify-start w-full">
                 <p className=" text-[18px] leading-6 border-b-2 border-primary tracking-wide capitalize ">Blog & Articles</p>
                 <p className=" text-[32px] min-[749px]:text-[50px] min-[749px]:leading-[60px] leading-10 tracking-wider">Our recent posts</p>
             </div>
-            <Link href="/blog" className=" baba2 bg-black flex self-start capitalize text-white rounded-xl text-[14px] leading-3 px-6 py-5 hover:bg-primary whitespace-nowrap tracking-wider transition-colors duration-150 ">
+            <Link href="/blogs" className=" baba2 bg-black flex self-start capitalize text-white rounded-xl text-[14px] leading-3 px-6 py-5 hover:bg-primary whitespace-nowrap tracking-wider transition-colors duration-150 ">
                     See more articles
             </Link>
         </div>

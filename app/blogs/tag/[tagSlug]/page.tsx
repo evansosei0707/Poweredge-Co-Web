@@ -60,7 +60,7 @@ export default  async function tagBlogs({params: { tagSlug }}: Params) {
         <main className="w-full min-h-[100vh] items-center bg-white justify-start flex flex-col gap-6">
             <section className='w-[95%] flex items-center pt-20 pb-8 justify-center gap-4'>
                 <div className='flex items-center w-full border-b pb-10 border-black relative justify-center' >
-                    <p className="min-[758px]:text-[50px] text-center leading-[40px] text-[30px] min-[758px]:leading-[60px]">Tag Archives: {tagSlug}</p>
+                    <p className="min-[758px]:text-[50px] text-center leading-[40px] text-[30px] min-[758px]:leading-[60px] capitalize">Tag Archives: {tagSlug.replace(/-/g, ' ')}</p>
                     <a href="#blog-Page" className='bg-primary p-3 text-white font-bold rounded-lg absolute -bottom-6 left-1/2'>
                         <MdArrowDownward fontSize={20} />
                     </a>

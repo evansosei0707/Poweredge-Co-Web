@@ -13,7 +13,7 @@ const HomeServicesSlider: React.FC<{ serviceData : serviceDetailResponse[] }> = 
 
     const settings = {
         infinite: true,
-        speed: 500,
+        speed: 400,
         autoplay: true,
         centerMode: false,
         dots: false,
@@ -56,7 +56,7 @@ const HomeServicesSlider: React.FC<{ serviceData : serviceDetailResponse[] }> = 
             <div className='flex w-full h-full box-border  px-4 mb-8 mx-auto mt-0 justify-center items-center'>
                 <Slider {...settings} className="w-[100%] overflow-hidden gap-6 h-full flex" >
                     {serviceData.map((item: serviceDetailResponse, idx: number) => (
-                    <div key={idx} className="w-[100%] h-full flex flex-col flex-1 justify-center px-4  items-center gap-6">
+                    <div key={idx} className="w-[100%] h-full flex flex-col flex-1 justify-center px-1 md:px-4  items-center gap-6">
                         <div className='w-full h-[285px] overflow-hidden papa rounded-2xl'>
                             <Image
                                 src={urlFor(item.mainImage).url()}
@@ -66,11 +66,11 @@ const HomeServicesSlider: React.FC<{ serviceData : serviceDetailResponse[] }> = 
                                 alt='service-image'
                             />
                         </div>
-                        <div className='flex flex-col items-start pt-6 justify-center gap-4'>
-                            <Link href={`/services/${item.title}`} className="text-xl hover:text-primary transition-colors duration-100">
+                        <div className='flex flex-col items-start pt-6 justify-center gap-5'>
+                            <Link href={`/services/${item.pageSlug}`} className="text-xl hover:text-primary transition-colors duration-100">
                                 {item.title}
                             </Link>
-                            <p className="text-[#525252] ">{item.serviceBrief}</p> 
+                            <p className="text-[#525252] text-[18px] leading-[26px] font-kumb ">{item.serviceBrief}</p> 
                         </div>
                     </div>
                     ))}

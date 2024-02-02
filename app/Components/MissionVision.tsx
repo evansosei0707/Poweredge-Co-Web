@@ -26,7 +26,7 @@ export default async function MissionVision() {
                  <p className=" text-[18px] leading-6 border-b-2 border-primary tracking-wide capitalize ">Strategy, Vision, Goal & Values</p>
                  <p className=" text-[32px] min-[749px]:text-[50px] min-[749px]:leading-[60px] leading-10 tracking-wider">Don&apos;t know why we exists?</p>
              </div>
-             <Link href="/blog" className=" baba2 bg-black flex self-start capitalize text-white rounded-xl text-[14px] leading-3 px-6 py-5 hover:bg-primary whitespace-nowrap tracking-wider transition-colors duration-150 ">
+             <Link href="/contact-us" className=" baba2 bg-black flex self-start capitalize text-white rounded-xl text-[14px] leading-3 px-6 py-5 hover:bg-primary whitespace-nowrap tracking-wider transition-colors duration-150 ">
                      Learn more
              </Link>
          </div>

@@ -19,7 +19,7 @@ export default async function Estimate() {
 
     
   return (
-    <section className=' min-[1009px]:w-[95%] w-full bg-white rounded-xl p-4 shadow-md py-8 flex min-h-[100vh] flex-col items-center min-[1009px]:flex-row justify-start min-[1009px]:justify-center gap-9 min-[1009px]:gap-5'>
+    <section className=' min-[1009px]:w-[95%] w-full bg-white rounded-xl md:p-4 p-2 shadow-md py-8 flex min-h-[100vh] flex-col items-center min-[1009px]:flex-row justify-start min-[1009px]:justify-center gap-9 min-[1009px]:gap-5'>
         <div className="w-full flex flex-col px-4 p-8 items-start justify-start gap-5 min-[1009px]:border-r h-full min-[1009px]:w-1/2 ">
 
             <div className='w-full flex flex-col  items-start justify-start gap-6'>

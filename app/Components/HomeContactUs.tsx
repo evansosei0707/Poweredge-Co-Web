@@ -27,7 +27,7 @@ export default async function HomeContactUs() {
                 height={100}
             />
             <h2 className="lg:text-[66px] text-[40px] md:text-[45px] max-w-[70%]">We <span className='text-primary underline '> started</span> this company for you</h2>
-                <Link className='border-2 border-white text-white hover:text-black text-lg leading-4 rounded-xl bg-transparent baba hover:bg-white transition-colors duration-100 py-4 md:py-6 md:px px-10' href="/contact">Contact Us
+                <Link className='border-2 border-white text-white hover:text-black text-lg leading-4 rounded-xl bg-transparent baba hover:bg-white transition-colors duration-100 py-4 md:py-6 md:px px-10' href="/contact-us">Contact Us
                 </Link>
         </div>
         <div className='h-[240px] min-[1015px]:h-full w-full min-[1015px]:w-[40%]'>

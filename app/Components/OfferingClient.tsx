@@ -13,12 +13,12 @@ const OfferingClient: React.FC<{ aboutServiceData : serviceDetailResponse[] }> =
     
     return (
         <div className='bg-home-contact py-8 relative text-white w-full flex-wrap h-full flex flex-col items-center justify-start p-4 pl-7 gap-1 md:gap-4 '>
-            <div className="flex w-full flex-wrap h-full items-center justify-start p-4 pl-7 gap-1 md:gap-4 ">
+            <div className="flex w-full flex-wrap h-full pl-0 items-center justify-start p-4 md:pl-5 gap-6 md:gap-4 ">
                 {
                     aboutServiceData.map((item: serviceDetailResponse, idx: number) => (
                         <div
                             key={idx} 
-                            className='flex flex-col items-end cursor-default text-[50px] justify-center'
+                            className='flex flex-col items-end cursor-default whitespace-nowrap text-[50px] justify-center gap-4'
                             onMouseEnter={() => {
                                 setImageReveal(true)
                                 setServiceIndex(idx)
@@ -27,7 +27,7 @@ const OfferingClient: React.FC<{ aboutServiceData : serviceDetailResponse[] }> =
                             ref={hoverRef}  
                         >
                             <p className=" text-white/75 text-base hidden  lg:flex self-end">0{idx + 1}</p>
-                            <Link href={`/services/${item.pageSlug}`} className='lg:text-[50px] text-[25px] md:text-[30px] leading-[45px] lg:leading-[50px] text-white px-6 hover:text-primary transition-colors duration-100'>{item.title} <span className="px-6 pl-2">/</span></Link>
+                            <Link href={`/services/${item.pageSlug}`} className='lg:text-[50px] text-[20px] md:text-[30px] leading-[45px] lg:leading-[50px] text-white px-6 hover:text-primary transition-colors duration-100'>{item.title} <span className="px-6 pl-2">/</span></Link>
                             <div className={`absolute w-[240px] transition-all duration-200 ${imageReveal && serviceIndex === idx ? 'transform scale-100 opacity-100' : 'transform scale-0 opacity-0'} rounded-lg overflow-hidden h-[320px] z-30`}>
                                 <Image 
                                     className="w-full h-full object-cover"

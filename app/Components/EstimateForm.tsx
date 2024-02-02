@@ -43,7 +43,7 @@ export default function EstimateForm() {
       };
 
   return (
-    <div className="w-full min-[1009px]:w-1/2 flex flex-col p-8 items-start justify-start gap-4">
+    <div className="w-full min-[1009px]:w-1/2 flex flex-col p-8 px-2 items-start justify-start gap-4">
             <p className="text-[26px] leading-[36px] py-3 pb-8">Request an Estimate</p>
             <form className="w-full flex flex-col items-start text-[#525252] justify-start gap-5">
                 <div className="flex flex-col w-full min-[975px]:flex-row justify-center items-center gap-5">

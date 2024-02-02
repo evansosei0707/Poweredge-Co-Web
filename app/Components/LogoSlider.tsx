@@ -12,7 +12,7 @@ const LogoSlider: React.FC<{ logoData : logoResponse }> = ({ logoData }) => {
 
     const settings = {
         infinite: true,
-        speed: 400,
+        speed: 300,
         autoplay: true,
         centerMode: false,
         dots: false,
