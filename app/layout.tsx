@@ -41,7 +41,7 @@ export default async function RootLayout({
   
   return (
     <html lang="en">
-      <body className={`${krona.variable} ${kumb.variable}  max-w-[1500px] bg-[#f4f4fa] `}>
+      <body className={`${krona.variable} ${kumb.variable}  max-w-[1500px] w-[100vw] overflow-x-hidden mx-auto bg-[#f4f4fa] `}>
         <Header headerContactData={headerContactData} />
           {children}
         <Footer />

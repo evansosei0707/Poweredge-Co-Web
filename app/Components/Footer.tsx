@@ -125,7 +125,7 @@ export default async function Footer() {
                         {
                             service.slice(0,5).map((item: allServiceResponse, idx: number ) => (
                                 
-                                <Link key={idx} href={`/blogs/${item.pageSlug}`} className="text-white/80 leading-[26px] hover:text-primary transition-colors duration-100">{item.title}</Link>
+                                <Link key={idx} href={`/services/${item.pageSlug}`} className="text-white/80 leading-[26px] hover:text-primary transition-colors duration-100">{item.title}</Link>
                             ))
                         }
                     </div>

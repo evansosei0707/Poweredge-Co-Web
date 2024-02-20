@@ -23,7 +23,7 @@ const HeroBanner: React.FC<{ bannerData: heroResponse }> = ({ bannerData }) => {
   function NextArrow(props: any) {
     const { className, style, onClick } = props;
     return (
-    <div className={`z-40 rounded-full  min-[1174px]:flex justify-center  ${navigates ? 'bg-white/20' : 'bg-transparent' } transition-all duration-300 hover:bg-white/70  p-4  items-center absolute right-5 lg:right-20  top-[40%] `}>
+    <div className={`z-40 rounded-full hidden  min-[1174px]:flex justify-center  ${navigates ? 'bg-white/20' : 'bg-transparent' } transition-all duration-300 hover:bg-white/70  p-4  items-center absolute right-5 lg:right-20  top-[40%] `}>
         <button
         className={ ` lg:rounded-full cursor-pointer font-extrabold  ` }
         style={{ ...style }}
@@ -39,7 +39,7 @@ const HeroBanner: React.FC<{ bannerData: heroResponse }> = ({ bannerData }) => {
   function PrevArrow(props: any) {
     const { className, style, onClick } = props;
     return (
-      <div className={`z-40 rounded-full  min-[1174px]:flex justify-center  ${navigates ? 'bg-white/20' : 'bg-transparent'} transition-colors duration-200 hover:bg-white/70  p-4    items-center absolute left-5 lg:left-20  top-[40%] `}>
+      <div className={`z-40 rounded-full hidden  min-[1174px]:flex justify-center  ${navigates ? 'bg-white/20' : 'bg-transparent'} transition-colors duration-200 hover:bg-white/70  p-4    items-center absolute left-5 lg:left-20  top-[40%] `}>
         <button
         className={ ` lg:rounded-full cursor-pointer font-extrabold  ` }
         style={{ ...style }}
@@ -55,7 +55,6 @@ const HeroBanner: React.FC<{ bannerData: heroResponse }> = ({ bannerData }) => {
       dots: false,
       infinite: true,
       speed: 900,
-      fade: true,
       autoplay: true,
       slidesToShow: 1,
       slidesToScroll: 1,

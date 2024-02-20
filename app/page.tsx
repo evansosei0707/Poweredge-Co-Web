@@ -30,6 +30,10 @@ export default async function Home() {
   return (
     <main className="flex min-h-screen w-full flex-col items-center justify-between">
         <HeroBanner bannerData={bannerData} />
+        <div className='w-[96%] lg:hidden mx-auto mt-4 '>
+          <p className=' text-[19px] leading-7'>Promoting Made in USA goods and services in the construction & mining industry worldwide
+</p>
+        </div>
          <AboutMining />
          <HomeServices />
          <HomeOperatons />

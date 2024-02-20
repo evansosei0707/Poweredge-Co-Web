@@ -111,4 +111,17 @@ export const serviceLinks: Link[] = [
     const formattedDate = new Date(dateTimeString).toLocaleDateString('en-US', options);
     return formattedDate;
   }
+
+  export  function inputStringCharac(inputString: string) {
+        const characters: string[] = [];
+        const regex = /[\s\s]/gu;
+
+        let match;
+
+        while((match = regex.exec(inputString)) !== null) {
+            characters.push(match[0])
+        }
+
+        return characters;
+  }
   

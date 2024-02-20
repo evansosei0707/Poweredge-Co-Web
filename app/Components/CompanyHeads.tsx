@@ -43,9 +43,9 @@ export default function CompanyHeads({ executivesData }: CompanyHeadsProps) {
 
 
   return (
-     <section className="flex flex-col items-center justify-start my-10 gap-8 w-[95%]">
+     <section className="flex flex-col items-center justify-start  my-10 gap-8 w-[95%]">
         <p className=" text-[30px] lg:text-[50px] lg:leading-[60px] leading-[40px]">Meet Our Executives</p>
-        <div className="flex gap-6 items-center flex-col lg:flex-wrap justify-center mx-auto flex-wrap w-full">
+        <div className="flex gap-6 items-center flex-col lg:flex-row justify-center mx-auto  w-full">
             {
                     executivesData.map((item: executivesVital) => (
                     <div key={item._key} className="flex flex-col items-start justify-start gap-4 w-full">
